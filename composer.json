@@ -1,0 +1,23 @@
+{
+  "name": "senkal/sandbox",
+  "description": "",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Marcin Sekalski",
+      "email": "senkal86@gmail.com"
+    }
+  ],
+  "require": {
+    "symfony/console": "^2.7"
+  },
+  "autoload" : {
+    "psr-4": {
+      "": "src"
+    }
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "bin-dir": "bin/"
+  }
+}
