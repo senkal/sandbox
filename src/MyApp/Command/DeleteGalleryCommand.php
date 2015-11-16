@@ -1,4 +1,5 @@
 <?php
+namespace MyApp\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -24,7 +25,7 @@ class DeleteGalleryCommand extends Command
         or die(mysql_error());
 
         while ($checkR = mysql_fetch_assoc($checkQ) ) {
-            ...
+            //...
             if (0 == $catCheckR[0]) {
                 $updateQ = mysql_query("UPDATE categories SET galery=0 WHERE id='$catId' ")
                 or die(mysql_error());
